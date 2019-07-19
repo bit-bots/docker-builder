@@ -10,8 +10,8 @@ pipeline {
 
     stage('Publish') {
         steps {
-            sh 'docker tag bitbots_builder localhost:5000/bitbots_builder'
-            sh 'docker push localhost:5000/bitbots_builder'
+            sh 'docker tag bitbots_builder registry.bit-bots.de:5000/bitbots_builder'
+            sh 'docker push registry.bit-bots.de:5000/bitbots_builder'
         }
     }
     }
@@ -22,3 +22,4 @@ pipeline {
         }
     }
 }
+
