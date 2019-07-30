@@ -3,7 +3,7 @@ FROM ros:melodic-ros-base-bionic AS bitbots-builder
 
 # Install system dependencies
 RUN apt-get update && \
-    apt-get install -y sudo python3-pip python-pip python-rospkg python-catkin-pkg \
+    apt-get install -y sudo python3-pip python-pip python-coverage python-xmlrunner python-rospkg python-catkin-pkg \
     python-catkin-lint python-rosdep ros-melodic-rosdoc-lite dia && \
     python3 -m pip install rospkg catkin-pkg
 
